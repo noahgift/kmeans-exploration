@@ -1,0 +1,44 @@
+A jump-start archive for k-means cluster analysis is given in
+
+jump-start-k-means-cluster-analysis-v001.zip
+
+To try it out, unzip the archive on your desktop, keeping the directory structure in place. Then execute the Python program in Canvas, setting the working directory to the location of the program file being edited:
+
+jump-start-k-means-cluster-analysis-v001.py
+
+The Python program provides an example of K-means cluster analysis.
+
+The program reads data from a comma-delimited text file showing student self-ratings on 32 personality attributes.
+
+The program shows how to perform cluster analysis for both variables and students.
+
+There are a variety of methods for evaluating the strength of a clustering solution. 
+
+The silhouette coefficient is a useful general-purpose index that we illustrate in the jump-start examples.
+
+The original reference for silhouettes is
+
+Rousseeuw, Peter J., 1987. Silhouettes: a Graphical Aid to the Interpretation and Validation of Cluster Analysis. Computational and Applied Mathematics 20: 53–65. 
+
+An excellent discussion of silhouettes is found in 
+
+Izenman, Alan Julian, 2008. Modern Multivariate Statistical Techniques, New York: Springer. (An electronic version of this book is available for free for Northwestern students from the Springer collection.)
+
+In Izenman's book, see Chapter 12 Cluster Analysis, with silhouette plots and silhouette coefficients described in pages 426-428. 
+
+The silhouette coefficient varies from -1 to +1. Higher positive values of the silhouette coefficient are better. 
+
+Izenman provides the following interpretation of the silhouette coefficient:
+    Positive values greater than 0.71 indicate that a strong structure has been found. 
+    Values between 0.51 and 0.70 indicate that a reasonable structure has been found. 
+    Values between 0.26 and 0.50 indicate that a weak and perhaps artificial structure has been found. 
+    Values lower than 0.25 imply no substantial structure has been found. 
+
+It goes without saying that negative silhouette coefficient values are suspect. 
+
+As it turns out, none of the cluster analyses carried out in this jump-start example is especially strong by the standards set by Izenman.
+
+To check the calculations in the Python program, a comparable R program was developed, as shown in the file
+
+jump-start-k-means-cluster-analysis-v001.R
+
